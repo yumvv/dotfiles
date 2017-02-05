@@ -1,0 +1,53 @@
+!
+! Replace "Caps_Lock key" as Ctrl
+!
+remove Lock = Caps_Lock
+!remove Control = Control_L
+!keysym Control_L = Caps_Lock
+keysym Caps_Lock = Control_L
+!add Lock = Caps_Lock
+add Control = Control_L
+
+!
+! Change "Muhenkan key" to Left Up
+! Change "Henkan_Mode key" to Right Down
+!
+!keycode 102 = Left Up
+!keycode 100 = Right Down
+
+!
+! Change "Muhenkan key" to Super_L
+! Change "Henkan_Mode key" to Super_R
+!
+keysym Muhenkan = Super_L
+add Mod4 = Super_L
+! keysym Hiragana_Katakana = Super_R
+! add Mod4 = Super_R
+keysym Hiragana_Katakana = Zenkaku_Hankaku Kanji
+
+!
+! Replace "Hiragana_Katakana key" as Super_R
+!
+!keysym Hiragana_Katakana = Super_R
+!add Mod4 = Super_R
+
+!
+! Replace "Henkan_Mode key" as Zenkaku_Hankaku
+!
+keycode 100 = Alt_R
+add Mod1 = Alt_R
+! keycode 100 = Zenkaku_Hankaku Kanji
+! keysym Henkan_Mode = Zenkaku_Hankaku Kanji
+
+!
+! Replace "YEN key" as backslash
+! Replace "bracket_R key" as Return
+! Replace "underbar key" as grave asciitilde
+! Replace "Zenkaku_hankaku key" as Escape
+!
+!keycode 132 = BackSpace
+!keycode 132 = backslash bar
+!keycode 51 = Return
+!keycode 97 = grave asciitilde
+!keycode 49 = Escape
+

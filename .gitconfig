@@ -1,0 +1,8 @@
+[user]
+  name = muquu
+  email = muquu@skytrum.com
+[push]
+	default = matching
+[core]
+	autocrlf = false
+	safecrlf = true
