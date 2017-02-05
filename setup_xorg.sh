@@ -4,8 +4,7 @@ ORIGIN=$(pwd)
 mkdir -p $HOME/.config/fontconfig
 ln -sb $HOME/dotfiles/fontconfig/fonts.conf $HOME/.config/fontconfig/fonts.conf
 
-#DOT_FILES=( .zsh .zshrc .zshrc.alias .zshrc.linux .gitconfig .vimrc .Xresources .Xmodmap )
-DOT_FILES=( zsh .zshrc .gitconfig .vimrc .xinitrc )
+DOT_FILES=( .bashrc .gitconfig .vimrc .xinitrc )
 
 for file in ${DOT_FILES[@]}
 do

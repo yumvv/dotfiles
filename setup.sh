@@ -1,7 +1,7 @@
 #!/bin/bash
 ORIGIN=$(pwd)
 
-DOT_FILES=( zsh .zshrc .gitconfig .vimrc )
+DOT_FILES=( .bashrc .gitconfig .vimrc )
 
 for file in ${DOT_FILES[@]}
 do
