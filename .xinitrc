@@ -42,6 +42,6 @@ systemctl --user import-environment
 #exec awesome
 #exec i3
 #exec cinnamon-session
-#exec mate-session
+exec mate-session
 #exec openbox-session
-exec startlxqt
+#exec startlxqt
