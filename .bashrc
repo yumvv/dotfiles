@@ -32,6 +32,10 @@ set -o emacs
 # Default Editor
 #
 export EDITOR=vim
+#
+# Page viewer
+#
+export LESS='-i -M -R'
 
 #
 # Prompt Colors
