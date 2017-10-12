@@ -75,7 +75,7 @@ linux*|freebsd*|cygwin*)
         export GIT_PS1_SHOWUNTRACKEDFILES=true
         export GIT_PS1_SHOWUPSTREAM="auto"
         export GIT_PS1_SHOWCOLORHINTS=true
-        export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w\$(__git_ps1 '|%s')]$Color_Off\n$ "
+        export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w]$Yellow\$(__git_ps1 ' (%s)')$Color_Off\n$ "
     else
         export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w]$Color_Off\n$ "
     fi
