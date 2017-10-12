@@ -67,11 +67,18 @@ linux*|cygwin*|msys*)
     ;;
 esac
 
-export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w]$Color_Off\n$ "
-
 case "${OSTYPE}" in
 linux*|freebsd*|cygwin*)
-    export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w]$Color_Off\n$ "
+    if [ -f /etc/bash_completion.d/git-prompt ]; then
+        export GIT_PS1_SHOWDIRTYSTATE=true
+        export GIT_PS1_SHOWSTASHSTATE=true
+        export GIT_PS1_SHOWUNTRACKEDFILES=true
+        export GIT_PS1_SHOWUPSTREAM="auto"
+        export GIT_PS1_SHOWCOLORHINTS=true
+        export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w\$(__git_ps1 '|%s')]$Color_Off\n$ "
+    else
+        export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w]$Color_Off\n$ "
+    fi
     ;;
 msys*)
     export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Green $MSYSTEM $Cyan [\w]$Color_Off\n$ "
