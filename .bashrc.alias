@@ -81,3 +81,8 @@ alias edf='cd ~/dotfiles ; vim'
 # history
 alias hist='history -50'
 alias hista='history 1'
+
+# ssh
+alias ssha='eval `ssh-agent`'
+alias sadd='ssh-add'
+alias sshl='ssh-add -l'
