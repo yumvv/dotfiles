@@ -76,6 +76,15 @@ linux*|freebsd*|cygwin*)
         export GIT_PS1_SHOWUPSTREAM="auto"
         export GIT_PS1_SHOWCOLORHINTS=true
         export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w]$Yellow\$(__git_ps1 ' (%s)')$Color_Off\n$ "
+    elif [ -f /usr/share/git/completion/git-completion.bash ]; then
+        source /usr/share/git/completion/git-prompt.sh
+        source /usr/share/git/completion/git-completion.bash
+        export GIT_PS1_SHOWDIRTYSTATE=true
+        export GIT_PS1_SHOWSTASHSTATE=true
+        export GIT_PS1_SHOWUNTRACKEDFILES=true
+        export GIT_PS1_SHOWUPSTREAM="auto"
+        export GIT_PS1_SHOWCOLORHINTS=true
+        export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w]$Yellow\$(__git_ps1 ' (%s)')$Color_Off\n$ "
     else
         export PS1="$Color_Off\n$USERCOLOR\u$HOSTCOLOR@\h$Cyan [\w]$Color_Off\n$ "
     fi
