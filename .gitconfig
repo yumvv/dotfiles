@@ -6,3 +6,5 @@
 [core]
 	autocrlf = false
 	safecrlf = true
+[pager]
+	branch = false
