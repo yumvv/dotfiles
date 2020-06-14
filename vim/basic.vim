@@ -19,6 +19,7 @@ set showmode                     " 現在のモードを表示
 set viminfo='50,<1000,s100,\"50  " viminfoファイルの設定
 set modelines=0                  " モードラインは無効
 set noundofile
+set nf=                          " 10進数での加算/減算
 
 " OSのクリップボードを使用する
 set clipboard=unnamedplus,autoselect
