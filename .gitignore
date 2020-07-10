@@ -20,4 +20,7 @@ Session.vim
 samples
 
 .vim/bundle/
-
+fish/fish_variables
+fish/conf.d/
+fish/completions/
+fish/functions/
