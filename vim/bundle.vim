@@ -8,7 +8,6 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-
 " Edit {{{
 
   "コメント
@@ -31,13 +30,21 @@ Plugin 'gmarik/Vundle.vim'
 " Appearance {{{
 
   " カラースキーマ
-  Plugin 'muquu/molokai'
+  " Plugin 'muquu/molokai'
+  Plugin 'sainnhe/sonokai'
 
   " ステータスラインをカッコよくする
   "Plugin 'Lokaltog/vim-powerline'
   "Plugin 'itchyny/lightline.vim'
   Plugin 'bling/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
+
+" }}}
+
+" Language {{{
+
+  " elixir
+  Plugin 'elixir-editors/vim-elixir'
 
 " }}}
 

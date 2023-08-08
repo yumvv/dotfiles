@@ -14,8 +14,18 @@ set t_Sb=[4%dm
 " set background=dark
 " let g:solarized_termcolors=256
 " colorscheme solarized
-colorscheme molokai
+" colorscheme molokai
 
+" sainnhe/sonokai Settings
+" Important!!
+if has('termguicolors')
+  set termguicolors
+endif
+" The configuration options should be placed before `colorscheme sonokai`.
+let g:sonokai_style = 'andromeda'
+let g:sonokai_better_performance = 1
+colorscheme sonokai
+let g:airline_theme = 'sonokai'
 
 " ターミナルタイプによるカラー設定
 " if &term =~ "xterm-256color" || "screen-256color"
